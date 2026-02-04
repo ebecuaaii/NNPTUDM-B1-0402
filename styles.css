@@ -1,0 +1,51 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-hover tbody tr {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.img-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Tooltip container */
+.product-row {
+    position: relative;
+}
+
+/* Using title attribute for simple tooltip, 
+   but user requested "Description displays when hovering mouse over the line"
+   We will rely on title attribute or a custom CSS tooltip if needed. 
+   For now, we can use the HTML title attribute on the TR which is standard simple behavior, 
+   or implemented strictly as a popover. 
+   
+   Let's enhance it with a custom data-tooltip approach if we want it fancy, 
+   but standard 'title' attribute is the most robust and requested "description displayed".
+*/
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: all 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
